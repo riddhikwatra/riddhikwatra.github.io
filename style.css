@@ -1,0 +1,23 @@
+*{
+    font-size: 32px;
+}
+nav {
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+}
+
+nav ul li{
+    display: inline;
+    margin: auto;
+    padding: auto;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
