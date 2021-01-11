@@ -1,23 +1,221 @@
-*{
-    font-size: 32px;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
 }
-nav {
-    text-align: center;
-}
-nav ul{
-    list-style: none;
-    padding: 0px;
-    margin: auto;
-    width: 100%;
+@media (max-width: 576px) {
+
 }
 
-nav ul li{
-    display: inline;
-    margin: auto;
-    padding: auto;
+
+nav ul li a {
+  padding: 10px 20px;
 }
-nav ul li a{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+
+.introsec{
+  width: 100%;
+  height: 1000px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.intro{
+    align-items: center;
+    position: absolute;
+    top: calc(100vh + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-icon{
+    align-items: center;
+}
+
+
+.carousel-inner{
+  width: 100%;
+  height: 100%;
+}
+.contact-item{
+  padding: 40px;
+}
+
+.contact-item a{
+  color: beige;
+}
+.contact-item a:hover{
+
+  color: pink;
+}
+.contact-list{
+  height: 200px;
+  display: flex;
+  padding-left: 28%;
+    list-style: none;
+}
+.contact-nav-bar{
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+}
+
+
+.font-18{
+  color: beige;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.logo{
+  padding:none;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.main-header{
+  padding: 0%;
+  width: 100%;
+  height: 90px;
+  margin: 0%;
+
+
+  position:fixed;
+  z-index: 999;
+}
+
+.main-header-item{
+  padding: 0 1.5rem;
+  width: 25%;
+}
+
+.main-header-item a{
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  font-family: emoji;
+  font-size: 20px;
+}
+.main-header-item a:active{
+  height: 100%;
+  background-color: white;
+  color: pink;
+}
+
+.main-header-item a.active,a:hover{
+  background-color: beige;
+  color:black;
+}
+.main-header-item-list{
+  padding: 0%;
+  margin: 2rem;
+  display: flex;
+  list-style: none;
+}
+
+.main-header-nav{
+  height: 100%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  text-decoration: none;
+  color: white;
+  font-family: emoji;
+  font-size: 80px;
+}
+
+
+.picture{
+  width: 100%;
+  height: 100%;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+}
+.sec{
+  padding: 20px;
+}
+.slides{
+
+  padding-top: 10px;
+  padding-left: 300px;
+  padding-right: 200px;
+  width: 90%;
+  height: 600px;
+  align-items: center;
+}
+body{
+  background-color: black;
+  background-image: url("../img/back.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  color: pink;
+  font-family: emoji;
+  text-align: center;
+}
+h2{
+  color: wheat;
+  font-family: none;
+}
+
+h3{
+  font-family: none;
+  font-size: 1.3rem;
+  color: beige;
+}
+
+hr{
+  border-top: 1px solid pink;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+p{
+  color: white;
+}
+
+.scrolled {
+  background-color:  rgba(0, 0, 0, 0.904);
+  transition: background-color 900ms linear;
 }
